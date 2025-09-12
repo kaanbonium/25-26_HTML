@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<h1>Forms</h1>
+<p>Two major types of forms are known as GET and POST</p>
+Get Form
+<form action="links.html" method="GET">
+    <label for="name">Name: </label>
+        <input type="text" name="data" id="name" placeholder="John Smith"><br />
+    <label for="email">Email:
+        </label><input type="email" name="email" id="email" placeholder="yourEmail@domain.ext"><br />
+    <label for="phone">Phone: </label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-45-678"><br />
+    <input type="checkbox" name="emailConsent" id="emailConsent" checked="checked">
+        <label for="emailConsent">May we send you promotional nonsense?</label><br />
+
+    <!-- Radio Buttons
+        Name must be the same to link.
+        Value and id should reflect the actual choice. -->
+    <input type="radio"  id="prefEmail" name="contactType" value="email">
+        <label for="prefEmail">Email:</label><br />
+
+
+    <input type="radio"  id="prefSnailmail" name="contactType" value="snailmail">
+        <label for="prefSnailmail">Snailmail:</label><br />
+
+
+    <input type="radio"  id="prefPhone" name="contactType" value="phone">
+        <label for="prefPhone">Phone:</label><br />
+    <!-- End Radio Buttons -->
+
+
+    <input type="submit">
+</form>
+Post Form
+<form action="links.html" method="POST">
+    <input type="text" name="data">
+    <input type="submit">
+</form>
+</body>
+</html>
